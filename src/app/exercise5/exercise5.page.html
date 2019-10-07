@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>exercise5</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-input type="number" placeholder="min" [(ngModel)]="min"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="max" [(ngModel)]="max"></ion-input>
+  </ion-item>
+
+
+  <div *ngIf="(min != undefined && min >= 0) && (max != undefined && max >= 0 && max > min) ">
+    <ion-button (click)="gen()">
+      Generate random
+    </ion-button>
+    Number: {{rand}}
+  </div>
+
+</ion-content>

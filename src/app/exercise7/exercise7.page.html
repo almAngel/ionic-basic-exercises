@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>exercise7</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Pesetas</ion-label>
+    <ion-input clearInput [(ngModel)]="pesetas" (keyup)="convertEuros()"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Euros</ion-label>
+    <ion-input clearInput [(ngModel)]="eur" (keyup)="convertPesetas()"></ion-input>
+  </ion-item>
+</ion-content>
