@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>exercise4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-label>Introduce your name:</ion-label>
+  <ion-input clearInput type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+
+  <ion-button (click)="greet()">
+    Greet
+  </ion-button>
+  {{response}}
+
+</ion-content>
